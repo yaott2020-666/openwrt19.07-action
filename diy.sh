@@ -16,5 +16,4 @@ git clone https://github.com/yangsongli/luci-theme-atmaterial.git package/luci-t
 git clone https://github.com/lwz322/luci-app-k3screenctrl.git package/k3/luci-app-k3screenctrl
 git clone https://github.com/lwz322/k3screenctrl.git package/k3/k3screenctrl
 git clone https://github.com/lwz322/k3screenctrl_build.git package/k3/k3screenctrl_build
-git clone https://github.com/xnxy2012/luci-app-passwall.git
-git clone https://github.com/vernesong/OpenClash.git
+git clone https://github.com/kenzok8/openwrt-packages.git package
