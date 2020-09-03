@@ -5,7 +5,7 @@ on:
     types: [published]
   push:
     branches:
-      - dev-master
+      - main
     paths:
       - '.config'
   #schedule:
@@ -14,11 +14,11 @@ on:
     types: [started]
 
 env:
-  REPO_URL: https://github.com/Lienol/openwrt
-  REPO_BRANCH: dev-master
+  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: newifi3.config
-  DIY_SH: diy.sh
+  DIY_SH: newifi3.sh
   FREE_UP_DISK: false
   SSH_ACTIONS: true
   UPLOAD_BIN_DIR: false
