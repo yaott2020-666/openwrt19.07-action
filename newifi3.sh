@@ -7,13 +7,15 @@
 #=================================================
 # Modify default IP
 sed -i 's/192.168.1.1/10.10.10.1/g' package/base-files/files/bin/config_generate
+sed -i 's/#src-git helloworld https://github.com/fw876/helloworld/src-git helloworld https://github.com/fw876/helloworld/g' /feeds.conf.default
 
 #移除不用软件包
-rm -rf k3screenctrl package/lean
+#rm -rf xxx/xxx/xxx/文件名
+
 #添加额外软件包
-git clone https://github.com/jefferymvp/luci-app-koolproxyR package/luci-app-koolproxyR
-git clone https://github.com/yangsongli/luci-theme-atmaterial.git package/luci-theme-atmaterial
-git clone https://github.com/lwz322/luci-app-k3screenctrl.git package/k3/luci-app-k3screenctrl
-git clone https://github.com/lwz322/k3screenctrl.git package/k3/k3screenctrl
-git clone https://github.com/lwz322/k3screenctrl_build.git package/k3/k3screenctrl_build
-git clone https://github.com/kenzok8/openwrt-packages.git package
+git clone https://github.com/cnzd/luci-app-koolproxyR.git package        #去广告最新KPR
+git clone https://github.com/xiaorouji/openwrt-package.git xiaorouji     #常用软件集合包
+git clone https://github.com/kenzok8/openwrt-packages.git                #常用软件集合包二
+git clone https://github.com/destan19/OpenAppFilter.git                  #APP过滤应用
+#git clone https://github.com/jerrykuku/luci-theme-argon.git       #取消注释下载最新的argon主题
+
