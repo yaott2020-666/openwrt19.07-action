@@ -14,14 +14,14 @@ on:
     types: [started]
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
-  REPO_BRANCH: master
+  REPO_URL: https://github.com/openwrt/openwrt
+  REPO_BRANCH: openwrt-18.06.2
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: newifi3.config
   DIY_SH: newifi3.sh
   FREE_UP_DISK: false
   SSH_ACTIONS: true
-  UPLOAD_BIN_DIR: false
+  UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
   TZ: Asia/Shanghai
 
